@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script
-src='//in.fw-cdn.com/30372876/210813.js'
-chat='true'>
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Web Form</title>
+    <title>Buy Product</title>
+    <script src="https://js.chargebee.com/v2/chargebee.js" data-cb-site="chargebee-assessment7-test"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-        h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 20px;
         }
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 10px;
+        .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
         }
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+        .product img {
+            width: 200px;
+            height: 200px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
         }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #5cb85c;
+        .product-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .subscribe-btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            text-decoration: none;
             cursor: pointer;
-            margin-top: 20px;
         }
-        button:hover {
-            background-color: #4cae4c;
+        .manage-btn {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Contact Form</h2>
-        <form id="form122">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
-            <button type="submit">Submit</button>
-
-        </form>
+    <div class="product">
+        <div class="product-title">Go Plan</div>
+        <img src="https://via.placeholder.com/200" alt="Go Plan Image">
+        <a href="javascript:void(0)" data-cb-type="checkout" data-cb-item-0="Go-USD-Monthly" data-cb-item-0-quantity="1" class="subscribe-btn">Subscribe</a>
     </div>
-    <br>
-    <div>
-    <h1>My Video</h1>
-    <video width="600" controls>
-    <source src="cr7.mp4" type="video/mp4">
-    </video>
+
+    <div class="product">
+        <div class="product-title">Rise Plan</div>
+        <img src="https://via.placeholder.com/200" alt="Rise Plan Image">
+        <a href="javascript:void(0)" data-cb-type="checkout" data-cb-item-0="Rise-USD-Monthly" data-cb-item-0-quantity="1" class="subscribe-btn">Subscribe</a>
     </div>
+
+    <div class="product">
+        <div class="product-title">Scale Plan</div>
+        <img src="https://via.placeholder.com/200" alt="Scale Plan Image">
+        <a href="javascript:void(0)" data-cb-type="checkout" data-cb-item-0="Scale-USD-Monthly" data-cb-item-0-quantity="1" class="subscribe-btn">Subscribe</a>
+    </div>
+
+    <a href="javascript:void(0)" data-cb-type="portal" class="manage-btn">Manage account</a>
+
 </body>
 </html>
